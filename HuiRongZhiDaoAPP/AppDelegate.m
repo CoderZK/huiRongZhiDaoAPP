@@ -15,16 +15,14 @@
 //推送
 #define UMKey @"5d1469d90cafb212ac000bc6"
 //友盟安全密钥//quvss8rcpv3jahqyajgeuspa6o1vdeqr
-#define SinaAppKey @"102135063"
-#define SinaAppSecret @"47a31952aed883dc13cdccaf9b30df0d"
-#define QQAppID @"101504727"
-#define QQAppKey @"2e7928e5d1e2974eb06a35fa408e0950"
+#define SinaAppKey @"2907325059"
+#define SinaAppSecret @"6a3cb8cb1164e8b8bb1ee9ac7c674dec"
+#define QQAppID @"101585946"
+#define QQAppKey @"9a571fa6d596664d503bf6f500e55587"
 #define WXAppID @"wx0e716e57dbe83758"
-#define WXAppSecret @"96405f2eddb5e6cd8e6e01c87bbda8fb"
+#define WXAppSecret @"8db830e769fab8da9ea028cab4fd718f"
 
-//#define UMKey @"5ba076ecf1f5563fef000179"
-//#define WXAppID @"wxcb65aa46d04ad49b"
-//#define WXAppSecret @"e44bf1d172e7b6a4638e8ecc63bb80e1"
+
 
 
 @interface AppDelegate ()
@@ -97,6 +95,17 @@
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_QQ appKey:QQAppID/*设置QQ平台的appID*/  appSecret:QQAppKey redirectURL:@"http://mobile.umeng.com/social"];
     [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_Sina appKey:SinaAppKey  appSecret:SinaAppSecret redirectURL:@"https://sns.whalecloud.com/sina2/callback"];
 }
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
+}
+
+
 
 //- (void)updateApp {
 //    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@",@"1468639448"]];
