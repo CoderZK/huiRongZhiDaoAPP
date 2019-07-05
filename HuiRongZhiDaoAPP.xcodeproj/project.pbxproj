@@ -524,9 +524,10 @@
 			baseConfigurationReference = 6C004717BBB3F024A7E8BA2F /* Pods-HuiRongZhiDaoAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KXWZ464PKG;
+				DEVELOPMENT_TEAM = ZSL4MW2WKS;
 				INFOPLIST_FILE = HuiRongZhiDaoAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -571,7 +572,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzhzd.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = zkcomdev;
+				PROVISIONING_PROFILE_SPECIFIER = ccccc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -581,9 +582,10 @@
 			baseConfigurationReference = 28FAC70945858CC1A2B90812 /* Pods-HuiRongZhiDaoAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = KXWZ464PKG;
+				DEVELOPMENT_TEAM = ZSL4MW2WKS;
 				INFOPLIST_FILE = HuiRongZhiDaoAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,7 +630,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gzhzd.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = zkcomdev;
+				PROVISIONING_PROFILE_SPECIFIER = ccccc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
